@@ -1,17 +1,18 @@
 {
-  "name": "vim",
+  "name": "vim-vn-info",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "VIM Presentation",
   "dependencies": {
     "mdx-deck": "^1.7.4",
     "styled-components": "^3.4.9"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "mdx-deck -p 7500 vim.mdx"
+    "dev": "mdx-deck -p 7500 deck.mdx",
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "pdf": "mdx-deck pdf deck-pdf.mdx --out-file vim-vn-info.pdf -d ."
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Hung HOANG",
+  "license": "MIT"
 }

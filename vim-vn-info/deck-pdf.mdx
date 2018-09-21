@@ -1,7 +1,9 @@
+```notes
+This is file is for exporting pdf.
+Dont use Appear and Split components since they are not yet supported for exporting.
+```
 import { Image } from 'mdx-deck'
-import { Appear } from 'mdx-deck'
 import { Bold, PinkText, Box } from './components/index.jsx';
-import { Split } from 'mdx-deck/layouts'
 import { Head } from 'mdx-deck'
 export { dark as theme } from 'mdx-deck/themes'
 
@@ -40,20 +42,14 @@ export { dark as theme } from 'mdx-deck/themes'
 # VIM's basics
 ---
 # VIM's modes
-<Appear>
-    <Box>
-        <Appear>
-            <PinkText>normal mode - navigate the structure of the file </PinkText>
-            <PinkText><Bold>i</Bold>nsert mode - editing the file </PinkText>
-            <PinkText><Bold>v</Bold>isual mode - highlight portions of the file to manipulate at once </PinkText>
-        </Appear>
-    </Box>
-</Appear>
+<Box>
+    <PinkText>normal mode - navigate the structure of the file </PinkText>
+    <PinkText><Bold>i</Bold>nsert mode - editing the file </PinkText>
+    <PinkText><Bold>v</Bold>isual mode - highlight portions of the file to manipulate at once </PinkText>
+</Box>
 ---
 # a file = text objects
 ---
-export default Split
-
 <img src="./public/tron-vuong-tamggiac.png" width="500px" height="auto" /> 
 
 # Text objects 
@@ -81,24 +77,16 @@ v - visually select
 <img src="https://media.giphy.com/media/3oEduN00N4bsjxlkWs/giphy.gif" width="500px" height="auto" /> 
 ---
 # dw
-<Appear>
-    delete word
-</Appear>
+delete word
 ---
 # caw
-<Appear>
-    change all word
-</Appear>
+change all word
 ---
 # yp
-<Appear>
-    copy paragraph
-</Appear>
+copy paragraph
 ---
 # vi(
-<Appear>
-    select in ()
-</Appear>
+select in ()
 ---
 <img src="./public/steve-jobs.jpg" width="800px" height="auto"/> 
 ---
@@ -117,8 +105,6 @@ v - visually select
 ---
 # One last thing...😇
 ---
-export default Split
-
 <img src="./public/caps-lock.jpg" width="500px" height="auto"/> 
 
 # = esc
